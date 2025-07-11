@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuizMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>QuizMaster</h1>
+  <div class ="box">
+    <div class="question">
+      <label>1. Capital of France?</label><br>
+      <input type="text" id="q1" placeholder="Your answer">
+    </div>
+
+    <div class="question">
+      <label>2. 333 + 999 = ?</label><br>
+      <input type="text" id="q2" placeholder="Your answer">
+    </div>
+
+    <div class="question">
+      <label>3. What does yuki means in japanese?</label><br>
+      <input type="text" id="q3" placeholder="Your answer">
+    </div>
+  </div>
+
+  <button onclick="calculateScore(strictScoring)">Check Score (Strict)</button>
+  <button onclick="calculateScore(lenientScoring)">Check Score (Lenient)</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
